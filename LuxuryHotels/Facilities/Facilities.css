@@ -1,0 +1,588 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+.button {
+    width: 270px;
+    height: 80px;
+    align-self: center;
+    background-color: #E0B973;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d19b5f;
+    transition: background-color 0.3s ease;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+.facilities-page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url("../assets/images/4.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(20,39,74,.5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button-wrapper-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    justify-content: space-between;
+}
+
+.facilities-page-header header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+.facilities-page-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facilities-page-header .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 90px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 25px;
+}
+
+.facilities-page-header .header-nav .active-tab{
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+}
+
+.facilities-page-header .logo {
+    width: 250px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #E0B973;
+    cursor: default;
+    user-select: none;
+}
+
+.facilities-page-header .logo span:first-child {
+    font-family: "adobe-garamond-pro", serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    color: #14274A;
+    line-height: 30px;
+    letter-spacing: 4px;
+}
+
+.facilities-page-header .logo span:last-child {
+    font-family: "adobe-garamond-pro", serif;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    color: #14274A;
+    letter-spacing: 5px;
+}
+
+.facilities-page-header .hotel-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    padding-top: 150px;
+}
+
+.facilities-page-header .hotel-name span:first-child {
+    font-family: "adobe-garamond-pro", serif;
+    font-size: 154px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    letter-spacing: 10px;
+    line-height: 115px;
+}
+
+.facilities-page-header .hotel-name span:nth-child(2) {
+    font-family: "adobe-garamond-pro", serif;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    letter-spacing: 25px;
+}
+
+.facilities-page-header .hotel-name span:last-child {
+    font-family: "Montserrat",sans-serif;
+    font-size: 25px;
+    width: 600px;
+    color: white;
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+
+.facilities-page-header .scroll-link {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.facilities-page-header .scroll {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    cursor: pointer;
+    width: fit-content;
+    justify-self: center;
+    align-self: center;
+}
+
+.facilities-page-header .scroll .text{
+    font-family: "Montserrat",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+
+/* footer */
+.footer {
+    position: relative;
+    background-color: #002244; 
+    color: white;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.footer-triangle {
+    position: absolute;
+    top: -60px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent; 
+    border-right: 80px solid transparent; 
+    border-bottom: 60px solid #002244; 
+    z-index: 1;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.footer-column-1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+.footer-column-1 h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-column-1 span:first-child {
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    line-height: 24px;
+}
+
+.footer-column-1 h3 span:nth-child(2){
+    padding-left: 18px;
+    font-family: "Poppins";
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+footer .columns-wrapper {
+    display: flex;
+    column-gap: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column-2 ,
+.footer-column-3 {
+    width: 150px;
+}
+
+.footer-column-2 ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.footer-column-3 ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.footer-column-2 a,
+.footer-column-3 a{
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.footer-column .social-media li:hover i {
+    color: #f0c75e!important;
+}
+.footer-column-2 i,
+.footer-column-3 i{
+    margin-right: 3px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-column p,
+.footer-column a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+footer .footer-column ul li a:hover {
+    color: #f0c75e; 
+}
+
+footer .social-media a {
+    display: block;
+}
+
+.footer-column-4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-column-4-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.footer-column-4 h4 {
+    font-family: "Montserrat",sans-serif;
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer .email-input-container { 
+    width: 400px; 
+}
+
+footer .email-input-container form{
+    display: flex;
+    align-items: center;
+    border: 2px solid #d4a15d; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    background-color: #002244; 
+    width: 300px; 
+}
+  
+footer .email-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: #002244; 
+    color: #fff; 
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+footer .email-input::placeholder {
+    color: #fff; 
+    opacity: 0.8;
+}
+
+footer .email-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #d4a15d; 
+    color: #002244; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-left: 2px solid #d4a15d;
+}
+
+footer .email-button:hover {
+    background-color: #c0904a; 
+}
+
+/* body */
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.facilities-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 1500px;
+}
+
+.facilities-content .intro-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #14274A;
+}
+
+.facilities-content .intro-text-header {
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #14274A;
+}
+
+.facilities-content .intro-text {
+    font-family: "Montserrat",sans-serif;
+    font-size: 25px;
+    color: #14274A;
+    text-align: center;
+}
+
+.facilities-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 190px;
+}
+
+/* reviews */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    padding-top: 190px;
+    
+}
+
+.reviews .reviews-header {
+    font-family: "Poppins",sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #14274A;
+}
+
+.reviews .reviews-content ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+.reviews .reviews-content ul li{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.reviews .reviews-content ul li span:first-child { 
+    font-family: "Montserrat",sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #14274A;
+}
+
+.reviews .reviews-content ul li span:last-child {
+    font-family: "Montserrat",sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #14274A;
+}
+
+/* modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+  
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px; 
+    border-radius: 10px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+  
+.modal h2 {
+    font-family: "Poppins";
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0;
+    color: #14274A;
+}
+
+.modal p {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+
+@media (max-width:1600px) {
+    .facilities-page-header .hotel-name span:first-child{
+        font-size: 100px;
+    }
+    .facilities-page-header .hotel-name span:nth-child(2){
+        font-size: 40px;
+    }
+    
+    .facilities-page-header .hotel-name span:last-child{
+        font-size: 15px;
+    }
+    .facilities-page-header .header-mid{
+        display: flex;
+        max-width: 100vh;    
+        column-gap: 50px;
+    }
+    .facilities-page-header .button-wrapper-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+        padding-right: 200px;
+    }
+    
+    .facilities-photos {
+        max-width: 900px;
+    }
+    .facilities-photos img{
+        max-width: 900px;
+    }
+
+  
+
+}
