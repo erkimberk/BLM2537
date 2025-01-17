@@ -22,10 +22,3 @@ window.onclick = function(event) {
   }
 }
 
-
-newsletter.addEventListener("submit", function(event) {
-  event.preventDefault(); 
-  const email = emailInput.value; 
-  alert(`${email} maili bültenimize kaydedildi!`); 
-  form.reset(); 
-});

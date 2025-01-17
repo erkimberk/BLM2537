@@ -23,10 +23,3 @@ window.onclick = function(event) {
 }
 
 
-newsletter.addEventListener("submit", function(event) {
-  event.preventDefault(); 
-  console.log("asd");
-  const email = emailInput.value; 
-  alert(`${email} maili bültenimize kaydedildi!`); 
-  form.reset(); 
-});

@@ -9,10 +9,3 @@ form.addEventListener("submit", function(event) {
   form.reset(); 
 });
 
-
-newsletter.addEventListener("submit", function(event) {
-  event.preventDefault(); 
-  const email = emailInput.value; 
-  alert(`${email} maili bültenimize kaydedildi!`); 
-  form.reset(); 
-});

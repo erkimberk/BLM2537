@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS subscribers (
+    email VARCHAR(255) NOT NULL
+);
